@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://j3cnwe1iy3tj"]
+
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_y7rlm"]
+[ext_resource type="PackedScene" uid="uid://vrkxwdstjoht" path="res://scenes/GUI.tscn" id="2_h45gb"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_y7rlm")
+
+[node name="GUI" parent="." instance=ExtResource("2_h45gb")]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 432.0
+offset_top = 320.0
+offset_right = 712.0
+offset_bottom = 536.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

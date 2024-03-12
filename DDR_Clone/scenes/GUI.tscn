@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://vrkxwdstjoht"]
+
+[ext_resource type="Texture2D" uid="uid://b2082adh5ehkp" path="res://art/LEDArrow.png" id="1_yt15u"]
+
+[node name="GUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="PlayArea" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_right = 1600.0
+offset_bottom = 1075.0
+
+[node name="ArrowArea" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 24.0
+offset_right = 1568.0
+offset_bottom = 192.0
+color = Color(0.811765, 0.894118, 0.929412, 1)
+
+[node name="ArrowSpot" type="Node2D" parent="."]
+position = Vector2(1068, 100)
+rotation = -3.14159
+
+[node name="Up" type="Sprite2D" parent="ArrowSpot"]
+position = Vector2(-4.00001, -3.99999)
+texture = ExtResource("1_yt15u")
+
+[node name="Down" type="Sprite2D" parent="ArrowSpot"]
+position = Vector2(132, -4.00034)
+rotation = 3.14159
+texture = ExtResource("1_yt15u")
+
+[node name="Left" type="Sprite2D" parent="ArrowSpot"]
+position = Vector2(-132, 4.00033)
+rotation = -1.5708
+texture = ExtResource("1_yt15u")
+
+[node name="Right" type="Sprite2D" parent="ArrowSpot"]
+position = Vector2(268, 3.99932)
+rotation = 1.5708
+texture = ExtResource("1_yt15u")
+
+[node name="Line" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 872.0
+offset_right = 880.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Line2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 1000.0
+offset_right = 1008.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Line3" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 1128.0
+offset_right = 1136.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
